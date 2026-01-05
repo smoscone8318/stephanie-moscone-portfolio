@@ -1,0 +1,513 @@
+/*
+Theme Name: Stephanie's Portfolio
+Theme URI: google.com
+Description: My portfolio theme.
+Author: Stephanie Moscone
+Author URI: google.com
+Version: 1.0
+License: License information (e.g., GPL2, GPL3)
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: your-theme-text-domain
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+main {
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: 150px;
+}
+
+h1 {
+    font-size: 68px;
+    padding-bottom: 10px;
+}
+
+h4 {
+    padding-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    line-height: 25px;
+}
+
+hr {
+    border: .5px solid rgb(143, 143, 143); 
+    margin: 20px 0; 
+}
+
+.logo h3 {
+    color: rgb(143, 143, 143);
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+/* Button styles */
+button {
+    font-weight: 500;
+    font-size: 28px;
+    color: white;
+    background-color: black;
+    padding: 9px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(0, 125, 208);
+}
+
+/* header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 249px;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+header ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 30px;
+}
+
+header ul li:last-child {
+    margin-right: 0;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: rgb(143, 143, 143);
+    padding: 22px 0;
+    display: inline-block;
+    transition: all ease 0.3s;
+    font-size: 18px;
+}
+
+header ul li a:hover {
+    color: rgb(131, 157, 181);
+}
+
+/* submenu */
+
+header ul .submenu {
+    position: absolute;
+    display: block;
+    width: 200px;
+    background-color: white;
+    box-shadow: 0 20px 45px #00000020;
+    margin-top: -50px;
+    opacity: 0;
+    z-index: -999;
+    transition: all ease 0.5s;
+}
+
+header ul li:hover .submenu {
+    z-index: 99;
+    opacity: 1;
+    margin-top: 0;
+}
+
+header ul .submenu li{
+    margin: 0;
+    width: 100%;
+}
+
+header ul .submenu li a {
+    padding: 15px 20px;
+    display: inline-block;
+    width: 100%;
+}
+
+/* intro */
+
+.introduction {
+    color: black; 
+}
+
+.introduction .highlight {
+    color: white; 
+    -webkit-text-stroke: 1px black; 
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.intro-p {
+    padding-top: 40px;
+    line-height: 20px;
+}
+
+/* work */
+
+.mywork h3 {
+    padding-top: 80px;
+    padding-bottom: 10px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+
+.container img {
+    width: 100%;
+    height: 100%;
+    padding-left: 2px;
+    padding-bottom: 2px;
+}
+
+.mywork .container a img {
+    transition: transform 0.3s; 
+}
+
+.mywork .container a:hover img {
+    transform: scale(1.05); 
+}
+
+/* work 2*/
+
+.container2 {
+    display: flex;
+}
+
+.container2 img {
+    width: 100%;
+    height: 100%;
+    padding-left: 2px;
+    padding-bottom: 2px;
+}
+
+.mywork2 .container2 a img {
+    transition: transform 0.3s; 
+}
+
+.mywork2 .container2 a:hover img {
+    transform: scale(1.05); 
+}
+
+/* connect */
+
+.connect {
+    padding-top: 80px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.connect p {
+    padding-top: 10px;
+}
+
+.connect-prompt {
+    text-align: center;
+}
+
+.socials {
+    margin-top: 20px; 
+}
+
+.socials a {
+    margin-right: 20px; 
+    transition: transform 0.3s, color 0.3s;
+}
+
+i {
+    color: black;
+    font-size: 48px;
+}
+
+.socials a:hover {
+    color: rgb(143, 143, 143); 
+    transform: scale(1.05); 
+}
+
+/* about me */
+
+.headshots {
+    display: flex; 
+    width: 100%;
+    height: 100%;
+}
+
+.headshots img {
+    width: 400px; 
+    height: auto; 
+    margin-right: 10px;
+}
+
+.headshots img:last-child {
+    margin-right: 0; 
+}
+
+/* values */
+
+.values {
+    padding-top: 100px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+    padding-bottom: 20px;
+}
+
+.serv_list {
+    flex: 0 1 230px; 
+    margin: 20px; 
+    text-align: center; 
+}
+
+.serv_list i {
+    padding-bottom: 15px;
+}
+
+.serv_list h2 {
+    padding-bottom: 10px;
+}
+
+/* banners */
+
+.banner img {
+    max-width: 100%; /* Set the maximum width of the image to 100% of its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.banner {
+    margin: 40px 0;
+}
+
+/* case study */
+
+.section{
+    padding-bottom: 40px;
+}
+
+.study-info {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 80px;
+}
+
+.study-title h1 {
+    padding-bottom: 40px;
+}
+
+.overview h3 {
+    padding-bottom: 20px;
+    font-weight: 500;
+    color: rgb(143, 143, 143);
+}
+
+/* goals */
+
+.goals-info {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+/* graphs */
+
+.graphs {
+    display: flex;
+}
+
+.graphs img {
+    width: 100%;
+    height: auto;
+}
+
+/* copyright */
+
+.copyright {
+    padding-top: 80px;
+}
+
+.films video {
+    width: 100%;
+    height: auto;
+  }
+
+/* artwork */
+
+.art-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.art-gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.introduction h3 {
+    padding-bottom: 15px;
+}
+
+.introduction a {
+    text-decoration: none;
+    color: black;
+    background-color: rgb(255, 143, 152);
+    padding: 5px;
+    transition: transform ease-out 0.3s;
+}
+
+.introduction a:hover {
+    transform: scale(1.1);
+    background-color: rgb(247, 101, 113);
+}
+
+
+@media (max-width: 950px) {
+    main {
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 40px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    nav {
+        width: 100%;
+        text-align: center;
+    }
+    
+    nav ul {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        margin: 20px;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin-bottom: 1px;
+        margin-right: 5px;
+    }
+
+    /* work */
+
+    .mywork .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mywork .container a {
+        margin-bottom: 5px; 
+    }
+
+    .container2 {
+        display: block;
+    }
+
+    /* about me */
+
+    .headshots {
+        display: block; 
+        justify-content: center;
+    }
+
+    /* values */
+
+    .serv_list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 20px;
+    }
+
+    .serv_list i {
+        margin-bottom: 10px;
+    }
+
+    /* case study */
+
+    .study-info {
+        display: block
+    }
+
+    .goals-info {
+        display: block
+    }
+
+    /* graphs */
+
+    .graphs {
+        display: block;
+    }
+
+    /* art gallery */
+
+    .art-gallery {
+        display: block;
+    }
+}
+
+.study-title p {
+    max-width: 600px;
+}
+
+.overview p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* mural process gallery */
+
+.process-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.process-feature img {
+    width: 100%;
+    height: auto;
+}
+
+/* two columns of three images */
+.process-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.process-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
