@@ -7,7 +7,7 @@
                 <h1><span class="highlight">Designer</span>, <span class="highlight">Artist</span>, &amp; <span class="highlight">Animator</span>.</h1>
             </div>
             <div class="intro-p">
-                <p>I'm a graphic designer based in Vancouver, Canada with experience in building and delivering UX/UI design for software and branding. I'm passionate about elevating small businesses and improving the lives of others through design and am always eager to learn new things!</p>
+                <p>I'm a graphic designer and educator based in Vancouver, Canada with experience in building and delivering UX/UI design for software and branding. I'm passionate about elevating small businesses and improving the lives of others through design and am always eager to learn new things!</p>
             </div>
         </section>
 
